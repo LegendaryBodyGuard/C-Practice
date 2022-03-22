@@ -9,8 +9,8 @@ class CoastalCity: public City{
     public:
         CoastalCity()
         {
-            name = "N/A";
-            population = 0;
+            City::name = "N/A";
+            City::population = 0;
             waterName = "N/A";
             beachNum = 0;
         }
