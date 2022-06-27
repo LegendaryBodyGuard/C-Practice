@@ -7,7 +7,7 @@ class CoastalCity: public City{
         std::string waterName;
         int beachNum;
         static unsigned int coastalCityCount;
-        
+
     public:
         CoastalCity()
         {
@@ -18,22 +18,22 @@ class CoastalCity: public City{
             coastalCityCount++;
         }
 
-        CoastalCity(std::string name1,unsigned int pop,std::string watername, int beachnum)
+        CoastalCity(std::string nm, unsigned int pop, std::string wName, int bNum)
         {
-            name = name1;
-            population = pop;
-            waterName = watername;
-            beachNum = beachnum;
+            City::name = nm;
+            City::population = pop;
+            this->waterName = wName;
+            this->beachNum = bNum;
         }
 
-        void setWaterName(std::string waterName)
+        void setWaterName(std::string wName)
         {
-            this -> waterName = waterName;
+            this -> waterName = wName;
         }
 
-        void setBeachNum(int beachNum)
+        void setBeachNum(int bNum)
         {
-            this -> beachNum = beachNum;
+            this -> beachNum = bNum;
         }
 
         std::string getWaterName() const
